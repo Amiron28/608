@@ -154,7 +154,7 @@
 
 // console.log(str);
 
-// //////
+// // //////
 
 // let str_two = 'HELLOWORLD'
 
@@ -174,9 +174,9 @@
 
 // ///////
 
-// let b = 'Math.random'
+// let math = Math.random().toString()
 
-// console.log(b.slice(0, 4) + ' ' + b.slice(5));
+// console.log(math);
 
 // /////////
 
@@ -189,6 +189,32 @@
 
 
 
-// let math = Math.random().toString()
+// 03.03 .2022
 
-// console.log(math);
+// alert('Hello world') //underfined
+
+// let answer = confirm('are you 18 ?') //boolean
+
+// console.log(answer);
+
+// let answer = prompt('how old are you ?') //string
+
+// console.log(answer);
+
+
+// let fruit = 'Banana'
+
+// if (fruit === 'Apple') {
+//     console.log('я его съем');
+// } else {
+//     console.log('что это такое ');
+// }
+
+
+// let answer = prompt('Ты умный ?')
+
+// if (answer === 'да') {
+//     console.log('че ты врешь ?');
+// } else {
+//     console.log('че ты врешь ?');
+// }
