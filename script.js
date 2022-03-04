@@ -46,15 +46,16 @@
 
 
 
-//increment
-//decrement
+// increment
+// decrement
 
 
 
 
 
 
-///d/z
+//     /
+//     d / z
 
 // let admin = 'Джон'
 // let name = 'Джон'
@@ -83,7 +84,8 @@
 
 
 
-///dz-2
+//     /
+//     dz - 2
 
 
 // let a = prompt()
@@ -144,7 +146,7 @@
 
 
 
-///d/z/2
+// /d/z / 2
 
 // let str = 'aaa@bbb@ccc'
 
