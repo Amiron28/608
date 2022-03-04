@@ -286,18 +286,75 @@ let answer_2 = +prompt('Номер счета')
 let answer_3 = +prompt('Сколько обналичить ?')
 
 if (answer_1 === 'Alex' || answer_1 === 'alex' || answer_1 === 'алекс' || answer_1 === name) {
-    console.log('welcome')
+    console.log('подходит')
+    if (answer_2 === account) {
+        console.log('подходит');
+        if (answer_3 <= 10000) {
+            console.log(10000 - answer_3 + ' осталось ');
+        } else {
+            console.log('недостаточно средств');
+        }
+    } else {
+        console.log('че врешь');
+    }
+} else {
+    console.log('такой пользователь не найден ');
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+//d/z-2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let name_2 = prompt('Как вас зовут ?')
+let age = prompt('Сколько вам лет ?')
+let money_2 = prompt('Сколько у вас денег ?')
+let crowd = prompt('Сколько вас ?')
+
+
+if (name_2.includes('А') || name_2.includes('A') || name_2.includes('а') || name_2.includes('a')) {
+    console.log('подходит');
+    if (age >= 20 && age <= 40) {
+        console.log('проходите');
+        if (money_2 >= 100) {
+            console.log('достаточно средств');
+            if (crowd <= 2) {
+                console.log('проходите');
+            } else {
+                console.log('извините места заняты');
+            }
+        } else {
+            console.log('недостаточно денег');
+        }
+    } else {
+        console.log('вы не подходите');
+    }
 } else {
-    console.log('Пользователь не нaйден, досвидули');
-}
-if (answer_2 === account) {
-    console.log('welcome');
-} else {
-    console.log('че врешь');
-}
-if (answer_3 <= 10000) {
-    console.log('welcome');
-} else {
-    console.log('недостаточно средств');
+    console.log('для начала поменяйте имя');
 }
