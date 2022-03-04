@@ -193,6 +193,8 @@
 
 // 03.03 .2022
 
+
+
 // alert('Hello world') //underfined
 
 // let answer = confirm('are you 18 ?') //boolean
@@ -204,19 +206,98 @@
 // console.log(answer);
 
 
-// let fruit = 'Banana'
 
-// if (fruit === 'Apple') {
+// let fruit = 'apple'
+
+// if (fruit[0].toUpperCase() + fruit.slice(1) === 'Apple') {
 //     console.log('я его съем');
 // } else {
 //     console.log('что это такое ');
 // }
 
 
-// let answer = prompt('Ты умный ?')
 
-// if (answer === 'да') {
-//     console.log('че ты врешь ?');
+// let answer = confirm('are you 18 ?')
+
+// if (answer === true) {
+//     console.log('welcome');
 // } else {
-//     console.log('че ты врешь ?');
+//     console.log('good bye');
 // }
+
+
+
+// let answer = prompt('how old are you man ?')
+
+// if (answer >= 18) {
+//     console.log('welcome');
+// } else {
+//     console.log('get out');
+// }
+
+
+// let fruit = 'Apple Banana'
+
+// if (fruit.includes('Apple')) {
+//     console.log('good');
+// } else if (fruit.includes(Banana)) {
+//     console.log('ooo banana');
+// }
+
+
+
+// let fruits = 'apple banana'
+
+// if (fruits.includes('apple') || fruits.includes('banana')) {
+//     console.log('cool');
+// } else {
+//     console.log('bad');
+// }
+
+
+// || //выбирает только true
+
+// && //выбирает только false
+
+
+
+// let int = +prompt('what is the season')
+
+// if (int >= 1 && int < 3 || int === 12) {
+//     console.log('winter');
+// } else if (int >= 3 && int < 6) {
+//     console.log('spring');
+// } else if (int >= 6 && int < 10) {
+//     console.log('summer');
+// } else if (int >= 10 && int < 12) {
+//     console.log('autumn');
+// } else {
+//     console.log('ты не из земли');
+// }
+
+
+//d/z
+
+let name = 'Alex'
+let money = 10000
+let account = 7777
+let answer_1 = prompt('Ваше имя')
+let answer_2 = +prompt('Номер счета')
+let answer_3 = +prompt('Сколько обналичить ?')
+
+if (answer_1 === 'Alex' || answer_1 === 'alex' || answer_1 === 'алекс' || answer_1 === name) {
+    console.log('welcome')
+
+} else {
+    console.log('Пользователь не нaйден, досвидули');
+}
+if (answer_2 === account) {
+    console.log('welcome');
+} else {
+    console.log('че врешь');
+}
+if (answer_3 <= 10000) {
+    console.log('welcome');
+} else {
+    console.log('недостаточно средств');
+}
