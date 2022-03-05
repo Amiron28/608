@@ -286,64 +286,35 @@ let answer_2 = +prompt('Номер счета')
 let answer_3 = +prompt('Сколько обналичить ?')
 
 if (answer_1 === 'Alex' || answer_1 === 'alex' || answer_1 === 'алекс' || answer_1 === name) {
-    console.log('подходит')
+    console.log('у вас подходящее имя')
     if (answer_2 === account) {
-        console.log('подходит');
+        console.log('верный номер счета');
         if (answer_3 <= 10000) {
-            console.log(10000 - answer_3 + ' осталось ');
+            console.log(10000 - answer_3 + ' осталось ' + answer_3 + ' вы сняли ');
         } else {
             console.log('недостаточно средств');
         }
     } else {
-        console.log('че врешь');
+        console.log('неверный номер счета');
     }
 } else {
     console.log('такой пользователь не найден ');
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 //d/z-2
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let name_2 = prompt('Как вас зовут ?')
-let age = prompt('Сколько вам лет ?')
-let money_2 = prompt('Сколько у вас денег ?')
-let crowd = prompt('Сколько вас ?')
+let age = +prompt('Сколько вам лет ?')
+let money_2 = +prompt('Сколько у вас денег ?')
+let crowd = +prompt('Сколько вас ?')
 
 
-if (name_2.includes('А') || name_2.includes('A') || name_2.includes('а') || name_2.includes('a')) {
-    console.log('подходит');
+if (name_2.slice(0, 1) === 'A' || name_2.slice(0, 1) === 'a' || name_2.slice(0, 1) === 'а' || name_2.slice(0, 1) === 'А') {
+    console.log('вы подходите по имени');
     if (age >= 20 && age <= 40) {
-        console.log('проходите');
+        console.log('вы подходите по возрасту');
         if (money_2 >= 100) {
-            console.log('достаточно средств');
+            console.log('у вас достаточно средств');
             if (crowd <= 2) {
                 console.log('проходите');
             } else {
@@ -353,7 +324,7 @@ if (name_2.includes('А') || name_2.includes('A') || name_2.includes('а') || na
             console.log('недостаточно денег');
         }
     } else {
-        console.log('вы не подходите');
+        console.log('вы не подходите по возрасту');
     }
 } else {
     console.log('для начала поменяйте имя');
