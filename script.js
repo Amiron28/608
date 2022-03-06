@@ -278,54 +278,82 @@
 
 //d/z
 
-let name = 'Alex'
-let money = 10000
-let account = 7777
-let answer_1 = prompt('Ваше имя')
-let answer_2 = +prompt('Номер счета')
-let answer_3 = +prompt('Сколько обналичить ?')
+// let name = 'Alex'
+// let money = 10000
+// let account = 7777
+// let answer_1 = prompt('Ваше имя')
+// let answer_2 = +prompt('Номер счета')
+// let answer_3 = +prompt('Сколько обналичить ?')
 
-if (answer_1 === 'Alex' || answer_1 === 'alex' || answer_1 === 'алекс' || answer_1 === name) {
-    console.log('у вас подходящее имя')
-    if (answer_2 === account) {
-        console.log('верный номер счета');
-        if (answer_3 <= 10000) {
-            console.log(10000 - answer_3 + ' осталось ' + answer_3 + ' вы сняли ');
-        } else {
-            console.log('недостаточно средств');
-        }
-    } else {
-        console.log('неверный номер счета');
-    }
+// if (answer_1 === 'Alex' || answer_1 === 'alex' || answer_1 === 'алекс' || answer_1 === name) {
+//     console.log('у вас подходящее имя')
+//     if (answer_2 === account) {
+//         console.log('верный номер счета');
+//         if (answer_3 <= 10000) {
+//             console.log(10000 - answer_3 + ' осталось ' + answer_3 + ' вы сняли ');
+//         } else {
+//             console.log('недостаточно средств');
+//         }
+//     } else {
+//         console.log('неверный номер счета');
+//     }
+// } else {
+//     console.log('такой пользователь не найден ');
+// }
+
+// //d/z-2
+
+// let name_2 = prompt('Как вас зовут ?')
+// let age = +prompt('Сколько вам лет ?')
+// let money_2 = +prompt('Сколько у вас денег ?')
+// let crowd = +prompt('Сколько вас ?')
+
+
+// if (name_2.slice(0, 1) === 'A' || name_2.slice(0, 1) === 'a' || name_2.slice(0, 1) === 'а' || name_2.slice(0, 1) === 'А') {
+//     console.log('вы подходите по имени');
+//     if (age >= 20 && age <= 40) {
+//         console.log('вы подходите по возрасту');
+//         if (money_2 >= 100) {
+//             console.log('у вас достаточно средств');
+//             if (crowd <= 2) {
+//                 console.log('проходите');
+//             } else {
+//                 console.log('извините места заняты');
+//             }
+//         } else {
+//             console.log('недостаточно денег');
+//         }
+//     } else {
+//         console.log('вы не подходите по возрасту');
+//     }
+// } else {
+//     console.log('для начала поменяйте имя');
+// }
+
+
+
+///06.03.2022
+
+
+////d/z
+
+
+let a = prompt('Введите число')
+
+if (a % 2 == 0) {
+    console.log(alert('четное число'));
 } else {
-    console.log('такой пользователь не найден ');
+    console.log(alert('нечетное число'));
 }
 
-//d/z-2
 
-let name_2 = prompt('Как вас зовут ?')
-let age = +prompt('Сколько вам лет ?')
-let money_2 = +prompt('Сколько у вас денег ?')
-let crowd = +prompt('Сколько вас ?')
+/---------------/
 
 
-if (name_2.slice(0, 1) === 'A' || name_2.slice(0, 1) === 'a' || name_2.slice(0, 1) === 'а' || name_2.slice(0, 1) === 'А') {
-    console.log('вы подходите по имени');
-    if (age >= 20 && age <= 40) {
-        console.log('вы подходите по возрасту');
-        if (money_2 >= 100) {
-            console.log('у вас достаточно средств');
-            if (crowd <= 2) {
-                console.log('проходите');
-            } else {
-                console.log('извините места заняты');
-            }
-        } else {
-            console.log('недостаточно денег');
-        }
-    } else {
-        console.log('вы не подходите по возрасту');
-    }
+let name = prompt('Введите имя')
+
+if (name.slice(0, 1) === 'A/a' || name.slice(0, 1) === 'А/а' || name === 'Alex' || name === 'alex' || name === 'Алекс' || name === 'алекс') {
+    console.log(alert('проходите'));
 } else {
-    console.log('для начала поменяйте имя');
+    console.log(alert('вы не подходите по имени'));
 }
