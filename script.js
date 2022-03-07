@@ -16,7 +16,7 @@ if (a % 2 == 0) {
 
 let name = prompt('Введите имя')
 
-if (name.slice(0, 1) === 'A/a' || name.slice(0, 1) === 'А/а' || name === 'Alex' || name === 'alex' || name === 'Алекс' || name === 'алекс') {
+if (name === 'Alex' || name === 'alex' || name === 'Алекс' || name === 'алекс' || name === 'ALex' || name === 'ALEX' || name === 'АЛЕКС' || name === 'ALeX' || name === 'ALEx' || name === 'АЛЕКс') {
     console.log(alert('проходите'));
 } else {
     console.log(alert('вы не подходите по имени'));
