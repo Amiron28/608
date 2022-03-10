@@ -195,6 +195,8 @@
 
 
 
+
+
 // alert('Hello world') //underfined
 
 // let answer = confirm('are you 18 ?') //boolean
@@ -329,3 +331,126 @@
 // } else {
 //     console.log('для начала поменяйте имя');
 // }
+
+
+
+///06.03.2022
+
+
+
+////d/z
+
+
+// let a = prompt('Введите число')
+
+// if (a % 2 == 0) {
+//     console.log(alert('четное число'));
+// } else {
+//     console.log(alert('нечетное число'));
+// }
+
+
+
+// let name = prompt('Введите имя')
+
+// if (name === 'Alex' || name === 'alex' || name === 'Алекс' || name === 'алекс' || name === 'ALex' || name === 'ALEX' || name === 'АЛЕКС' || name === 'ALeX' || name === 'ALEx' || name === 'АЛЕКс') {
+//     console.log(alert('проходите'));
+// } else {
+//     console.log(alert('вы не подходите по имени'));
+// }
+
+
+
+//08.03.2022
+
+
+
+
+// let a = 'Jordan'
+
+// if (a === 'Jordan') {
+//     console.log('Hello');
+// } else {
+//     console.log('Bye');
+// }
+
+// if(a === 'Jordan') console.log('Hello');
+// else console.log('Bye');
+
+// a === 'Jordan' ? console.log('Hello') : console.log('Bye');
+
+
+// console.log(arr.length);
+
+// let arr = [1,'string', 55, {a: 'ss', b: 33}, ['hello', 13], true, 22, 12, false, {a: 20}, [22], [22,[[22]],22]]
+
+// console.log(arr[0] + arr[2] + arr[3].b + arr[4][1] + arr[6] + arr[7] + arr[9].a + arr[10][0] + arr[11][0] + arr[11][1][0][0] + arr[11][2]);
+
+//методы массивов
+
+
+
+//методы добавления
+
+// let arr_names = ['Gulnaz', 'Karina', 'Kaneki', 'Amir', 'Daler', 'Damir', 'Daniel']
+
+// arr_names.push('Jurabek')//добавляет в конец
+// arr_names.unshift('Jaxonigir')//добавляет в начало
+
+// console.log(arr_names);
+
+
+// //методы удаления
+
+// arr_names.pop()//убирает самый последний элемент
+// arr_names.shift()//убирает самый первый элемент
+
+// arr_names.splice(1,1, 'Parviz')//второе число означает скольких убрать
+
+// console.log(arr_names);
+
+
+//методы поиска
+
+
+// let arr_names = ['Gulnaz', 'Karina', 'Kaneki', 'Damir', 'Amir', 'Daler', 'Damir', 'Daniel', 'Damir',]
+
+// includes()
+// indexof()
+
+// console.log(arr_names.indexOf('Daler'));
+// console.log(arr_names.includes('Daler'));
+
+// let findings = arr_names.find(item => item === 'Damir')//ищет элементы
+
+// let findings = arr_names.filter(item => item === 'Damir')//создает массив и дает инф
+
+// console.log(findings);
+
+
+
+
+
+// let arr = [1, 2, false, 'hello', 24, 'world', undefined, null, 'error', 22]
+
+// let num = []
+// let string = []
+// let bool = []
+// let obj = []
+
+// arr.filter(item => {
+//     if (typeof (item) === 'number') {
+//         num.push(item)
+//     } else if (typeof (item) === 'string') {
+//         string.push(item)
+//     } else if (typeof (item) === 'boolean') {
+//         bool.push(item)
+//     } else if (typeof (item) === 'object') {
+//         obj.push(item)
+//     }
+// })
+
+
+// console.log(num, string, bool, obj);
+
+
