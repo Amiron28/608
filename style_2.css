@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: grey;
+}
+
+.main {
+    width: 1440px;
+    height: 2313px;
+    background-color: white;
+    margin: 50px auto;
+    position: relative;
+
+
+}
+
+.beginning {
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    top: 45px;
+    left: 100px;
+
+}
+
+.home {
+    width: 43px;
+    height: 10px;
+    background-color: transparent;
+    position: absolute;
+    top: 56px;
+    left: 415px;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 10px;
+    /* identical to box height, or 67% */
+
+
+    color: #0082F3;
+
+}
+
+.first-img {
+    position: absolute;
+    top: 65px;
+    left: 821px;
+
+}
+
+.perevernutoe-pred {}
+
+.connect {
+
+    position: absolute;
+    width: 66px;
+    height: 10px;
+    left: 498px;
+    top: 56px;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 10px;
+    /* identical to box height, or 67% */
+
+
+    color: #222222;
+}
+
+.privicy {
+    position: absolute;
+    width: 67px;
+    height: 10px;
+    left: 604px;
+    top: 56px;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 10px;
+    /* identical to box height, or 67% */
+
+
+    color: #222222;
+
+}
+
+.instant {
+
+    position: absolute;
+    width: 306px;
+    height: 120px;
+    left: 212px;
+    top: 233px;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 60px;
+    /* or 109% */
+
+
+    color: #333333;
+}
+
+.under-instsnt {
+    position: absolute;
+    width: 434px;
+    height: 70px;
+    left: 212px;
+    top: 385px;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    /* or 146% */
+
+
+    color: #333333;
+
+}
+
+.IMG-2 {
+
+    position: absolute;
+    width: 374px;
+    height: 397px;
+    left: 212px;
+    top: 769px;
+}
+
+.save-on-your {
+
+    position: absolute;
+    width: 392px;
+    height: 100px;
+    left: 730px;
+    top: 833px;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 50px;
+    /* or 111% */
+
+
+    color: #333333;
+
+}
+
+.under-save-on {
+
+    position: absolute;
+    width: 310px;
+    height: 35px;
+    left: 730px;
+    top: 965px;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    /* identical to box height, or 146% */
+
+
+    color: #333333;
+
+}
+
+.options {
+
+    position: absolute;
+    width: 91px;
+    height: 35px;
+    left: 730px;
+    top: 1000px;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    /* identical to box height, or 146% */
+
+
+    color: #333333;
+
+}
+
+.how-it-works {
+
+    position: absolute;
+    width: 291px;
+    height: 50px;
+    left: 575px;
+    top: 1254px;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 50px;
+    /* identical to box height, or 111% */
+
+    text-align: center;
+
+    color: #333333;
+
+}
+
+.get-it-on-pay {
+    position: relative;
+    width: 1440px;
+    height: 371px;
+    left: 0px;
+    top: 1712px;
+    background: #31C5A1;
+}
+
+
+.footer {
+    position: absolute;
+    height: 230px;
+    width: 1440px;
+    background-color: red;
+}
+
+.logo-in-footer {
+
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    left: 100px;
+    top: 2133px;
+}
+
+.office {
+
+    position: absolute;
+    width: 52px;
+    height: 30px;
+    left: 410px;
+    top: 2133px;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    /* identical to box height, or 176% */
+
+
+    color: #333333;
+
+}
+
+.four-pizer {
+    position: absolute;
+    width: 167px;
+    height: 30px;
+    left: 410px;
+    top: 2163px;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    /* identical to box height, or 176% */
+
+
+    color: #333333;
+
+}
+
+.phrase-1 {
+
+    position: absolute;
+    width: 127px;
+    height: 30px;
+    left: 410px;
+    top: 2193px;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    /* identical to box height, or 176% */
+
+
+    color: #333333;
+
+}
+
+.contct-1 {
+    position: absolute;
+    width: 67px;
+    height: 30px;
+    left: 720px;
+    top: 2133px;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    color: #333333;
+}
+
+.hello {
+
+    position: absolute;
+    width: 148px;
+    height: 30px;
+    left: 720px;
+    top: 2163px;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    color: #333333;
+}
+
+.phone {
+
+    position: absolute;
+    width: 158px;
+    height: 30px;
+    left: 720px;
+    top: 2193px;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #333333;
+}
+
+.power-by {
+    position: absolute;
+    width: 258px;
+    height: 30px;
+    left: 1030px;
+    top: 2133px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    color: #333333;
+}
+
+.text-under-power-by {
+
+    position: absolute;
+    width: 264px;
+    height: 90px;
+    left: 1030px;
+    top: 2168px;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    color: #333333;
+}
+
+.p1 {
+    position: absolute;
+    width: 555px;
+    height: 35px;
+    top: 131px;
+    left: 443px;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    /* identical to box height, or 117% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.p2 {
+
+    position: absolute;
+    width: 204px;
+    height: 35px;
+    top: 166px;
+    left: 618px;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF
+}
+
+.perevernutoe-pred {
+    width: 36px;
+    height: 108px;
+    background: #39CDCC;
+    position: absolute;
+    top: 92px;
+}
+
+.Google-play {
+    background: #EEEAFF;
+    position: absolute;
+    left: 212px;
+    top: 485px;
+    width: 147px;
+    height: 50px;
+    display: flex;
+
+}
+
+.App-store {
+    width: 147px;
+    height: 50px;
+    background: #EEEAFF;
+    position: absolute;
+    top: 485px;
+    left: 367px;
+}
+
+.Google-logo {
+    width: 21.9px;
+    height: 23.3px;
+    display: flex;
+    align-items: center;
+    
+}

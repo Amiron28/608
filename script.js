@@ -243,7 +243,8 @@ let users = [
     {
         "id": 3,
         "name": "Clementine Bauch",
-        "username": "Samantha", "email": "Nathan@yesenia.net",
+        "username": "Samantha",
+        "email": "Nathan@yesenia.net",
         "address": {
             "street": "Douglas Extension",
             "suite": "Suite 847",
@@ -433,9 +434,37 @@ let emails = {
 let other = []
 
 users.filter(item => {
-    if (item.website.includes() === 'org') {
-        emails.org.push()(item)
+    if (item.website.includes('.org') || item.email.includes('.org')) {
+        emails.org.push(item)
+    } else if (item.website.includes('.net') || item.email.includes('.net')) {
+        emails.net.push(item)
+    } else if (item.website.includes('.info') || item.email.includes('.info')) {
+        emails.info.push(item)
+    } else if (item.website.includes('.biz') || item.email.includes('.biz')) {
+        other.push(item)
+    } else if (item.website.includes('.com') || item.email.includes('.com')) {
+        other.push(item)
+    } else if (item.website.includes('.io') || item.email.includes('.io')) {
+        other.push(item)
+    } else if (item.website.includes('.me') || item.email.includes('.me')) {
+        other.push(item)
+    } else if (item.website.includes('.ca') || item.email.includes('.ca')) {
+        other.push(item)
+    } else if (item.website.includes('.tv') || item.email.includes('.tv')) {
+        other.push(item)
     }
+
 })
 
-console.log(emails);
+console.log(emails, other);
+
+
+
+
+// arr.filter(item => {
+//     if (item.completed === true) {
+//         a.arr.push(item)
+//     } else if (item.completed === false) {
+//         b.arr.push(item)
+//     }
+// })
