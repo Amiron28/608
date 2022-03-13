@@ -440,17 +440,7 @@ users.filter(item => {
         emails.net.push(item)
     } else if (item.website.includes('.info') || item.email.includes('.info')) {
         emails.info.push(item)
-    } else if (item.website.includes('.biz') || item.email.includes('.biz')) {
-        other.push(item)
-    } else if (item.website.includes('.com') || item.email.includes('.com')) {
-        other.push(item)
-    } else if (item.website.includes('.io') || item.email.includes('.io')) {
-        other.push(item)
-    } else if (item.website.includes('.me') || item.email.includes('.me')) {
-        other.push(item)
-    } else if (item.website.includes('.ca') || item.email.includes('.ca')) {
-        other.push(item)
-    } else if (item.website.includes('.tv') || item.email.includes('.tv')) {
+    } else {
         other.push(item)
     }
 
