@@ -1,3 +1,4 @@
+
 let user = {
     name: 'Amir',
     surname: 'Nazarov',
@@ -41,16 +42,11 @@ let filter = values.filter(item => {
 console.log(num, str, bool);
 
 
-
-if (Math.max(num) > Math.max(str) || Math.max(num) > Math.max(bool)) {
-    console.log(num + 'больше');
-} else if (Math.max(str) > Math.max(num) || Math.max(str) > Math.max(bool)) {
-    console.log(str + 'больше');
-} else if (Math.max(bool) > Math.max(num) || Math.max(bool) > Math.max(str)) {
-    console.log(bool + 'больше');
+if (Math.max(num.length) > Math.max(str.length) || Math.max(num.length) > Math.max(bool.length)) {
+    console.log(num + ' больше ');
+} else if (Math.max(str.length) > Math.max(num.length) || Math.max(str.length) > Math.max(bool.length)) {
+    console.log(str + ' больше ');
+} else if (Math.max(bool.length) > Math.max(num.length) || Math.max(bool.length) > Math.max(str.length)) {
+    console.log(bool + ' больше ');
 }
 
-
-console.log(
-    Math.max(num.length, str.length, bool.length)
-);
