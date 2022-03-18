@@ -64,7 +64,6 @@
 //     }
 // }
 
-let discount = 20
 
 let arr = [
     {
@@ -119,6 +118,7 @@ let arr = [
     }
 ]
 
+let discount = 20
 
 for (let item of arr) {
     item.price = Number
@@ -126,4 +126,5 @@ for (let item of arr) {
     item.price === item.price - (discount * item.price / 100)
         console.log(item.price);
     }
+}
 
