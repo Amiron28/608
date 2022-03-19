@@ -58,7 +58,7 @@ for (let item of arr) {
    
 
     item.price = item.price - (discount * item.price / 100)
-    console.log('скидки -20% ' + item.elem + ' ' + item.price + ' сум');
+    console.log('скидки -20% ' + item.elem + ' = ' + item.price + ' сум');
 }
 
 
