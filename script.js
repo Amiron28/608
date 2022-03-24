@@ -1,20 +1,3 @@
-// console.log(arr_school);
-
-// for (let i = 9; i >= 1; i--) {
-//     for (let k = 1; k <= 3; k++) {
-//         document.write(k)
-//     }
-//     // document.write(i)
-// }
-
-// for (let i = 5; i >= 1; i--) {
-//     for (let k = 1; k <= i; k++){
-//         document.write(`* `)
-//     }
-//         document.write(`<br>`)
-// }
-
-
 let arr_school = [
     {
         school: 'wepro',
