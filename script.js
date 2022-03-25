@@ -1,151 +1,60 @@
-let arr_school = [
+let arr_cars = [
     {
-        school: 'wepro',
-        budget: 800000,
-        tax: 13,
-        students: 190,
-
-        expenses: [
-            {
-                title: 'furniture',
-                price: 2000
-            },
-            {
-                title: 'water',
-                price: 800
-            },
-            {
-                title: 'electricity',
-                price: 5000
-            }
-        ]
+        name: 'malibu',
+        price: 30000
     },
     {
-        school: 'Amir',
-        budget: 30000000,
-        tax: 0000001,
-        students: 700,
-        expenses: [
-            {
-                title: 'furniture',
-                price: 90000
-            },
-            {
-                title: 'compi',
-                price: 100000
-            },
-            {
-                title: 'electricity',
-                price: 50000
-            },
-            {
-                title: 'close',
-                price: 9999
-            },
-            {
-                title: 'svechi',
-                price: 50000
-            },
-            {
-                title: 'Amir',
-                price: 1
-            },
-            {
-                title: 'anime',
-                price: 999999
-            },
-        ]
+        name: 'matiz',
+        price: 3000
     },
     {
-
-        school: 'IT',
-        budget: 9999999,
-        tax: 15,
-        students: 100,
-        expenses: [
-            {
-                title: 'furniture',
-                price: 20000
-            },
-            {
-                title: 'water',
-                price: 1000
-            },
-            {
-                title: 'electricity',
-                price: 5000
-            },
-        ]
+        name: 'spark',
+        price: 7500
     },
     {
-        school: '34',
-        budget: 1500000,
-        tax: 15,
-        students: 3000,
-        expenses: [
-            {
-                title: 'internet',
-                price: 1500
-            },
-            {
-                title: 'computers',
-                price: 2000
-            },
-            {
-                title: 'electricity',
-                price: 8000
-            }
-        ]
+        name: 'gentra',
+        price: 140000
     },
     {
-        school: 51,
-        budget: 800000,
-        tax: 13,
-        students: 2100,
-        expenses: [
-            {
-                title: 'television',
-                price: 2000
-            },
-            {
-                title: 'comp',
-                price: 4000
-            },
-            {
-                title: 'aspalt',
-                price: 2500
-            }
-        ]
+        name: 'santaferro',
+        price: 80000
     },
     {
-        school: 'GLC',
-        budget: 400000,
-        tax: 13,
-        students: 530,
-        expenses: [
-            {
-                title: 'tables',
-                price: 4000
-            },
-            {
-                title: 'trips',
-                price: 80000
-            },
-            {
-                title: 'electricity',
-                price: 8000
-            }
-        ]
+        name: 'tahoe',
+        price: 80000
+    },
+    {
+        name: 'tesla model y',
+        price: 30000
     }
 ]
 
-for (let item of arr_school) {
-    item.totalCostOfTax = 0
+let question_1 = prompt('какое название машины')
+let question_2 = +prompt('какая цена')
+let question_3 = +prompt('какого года')
 
-    item.totalCostOfTax = Math.round(item.budget * item.tax / 100)
+if (question_3 < 2010) {
+    question_2 = question_2 - (question_2 * 20 / 100)
 }
 
-let minTax = Math.min(arr_school.totalCostOfTax)
-let maxTax = Math.max(arr_school.totalCostOfTax)
+let add = confirm(`
+    название машины: ${question_1}
+    цена машины: ${question_2}
+    год машины: ${question_3}
 
-console.log(minTax, maxTax);
+    Вы уверены что хотите добавить ${question_1}
+`)
+
+let add_machine = {
+    name: question_1,
+    price: question_2,
+    year: question_3
+}
+
+if (add === true) {
+    arr_cars.push(add_machine)
+} else {
+    alert('понятно')
+}
+
+console.log(arr_cars);
