@@ -45,11 +45,13 @@ let add = confirm(`
     Вы уверены что хотите добавить ${question_1}
 `)
 
+
 let add_machine = {
     name: question_1,
     price: question_2,
     year: question_3
 }
+
 
 if (add === true) {
     arr_cars.push(add_machine)
