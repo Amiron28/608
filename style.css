@@ -9,3 +9,11 @@
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
 }
+
+input {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 100px auto;
+    border-radius: 10px;
+}
