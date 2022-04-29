@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: none;
+    text-decoration: none;
+}
+
+.accardion {
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    border: 2px dashed #cccc;
+    /* background-color: red; */
+}
+
+.content {
+    transition: 400ms;
+    max-height: 0;
+    overflow: hidden;
+
+}
