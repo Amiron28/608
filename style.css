@@ -10,7 +10,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-input {
+/* input {
     width: 200px;
     height: 30px;
     border: solid 2px #cccc;
@@ -18,4 +18,34 @@ input {
     padding: 10px;
     font-size: 14px;
     font-weight: 600;
+} */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: royalblue;
+    padding: 20px;
+    border-radius: 13px;
+    width: 400px;
+    margin: 100px auto;
+}
+
+button, input {
+    all: unset;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    height: 50px;
+}
+
+input::placeholder {
+    color: black;
+}
+
+button {
+    background-color: orange;
+    cursor: pointer;
 }
