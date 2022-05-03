@@ -10,55 +10,37 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body{
-    height: 200vh;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background-color: #c4c4c4c4;
-    padding: 20px;
-    border-radius: 13px;
-    width: 400px;
-    margin: 100px auto;
-}
-
-button, input {
-    all: unset;
-    background-color: white;
-    color: black;
+input {
+    width: 300px;
+    height: 60px;
+    background-color: #c4c4c4;
+    border-radius: 4px;
+    margin: 10px;
+    border: solid 2px grey;
+    padding: 15px;
     font-size: 18px;
-    font-weight: 600;
-    padding: 10px;
-    height: 50px;
-    border-radius: 7px;
-}
-
-input::placeholder {
-    color: black;
 }
 
 button {
-    background-color: orange;
-    cursor: pointer;
+    width: 300px;
+    height: 60px;
+    background: #4200FF;
+    border-radius: 4px;
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
 }
 
-.OK{
-    width: 100px;
-    height: 30px;
-    background-color: royalblue;
-    color: white;
-    text-align: center;
-    display: none;
+.df {
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
 }
 
-.cansel{
-    width: 100px;
-    height: 30px;
-    background-color: royalblue;
+input::placeholder {
     color: white;
-    text-align: center;
-    display: none;
+    font-size: 18px;
+    padding: 15px;
 }
