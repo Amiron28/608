@@ -27,13 +27,15 @@ form.onsubmit = (event) => {
     }
 }
 
-ok.onclick = () => { 
-    alert('succses')
+ok.onclick = () => {
+    alert('отлично')
 }
 
-cansel.onclick = () => { 
+cansel.onclick = () => {
     alert('понятно')
-    
+    block.style.display = "none"
+    ok.style.display = "none"
+    cansel.style.display = "none"
 }
 
 function submit() {
