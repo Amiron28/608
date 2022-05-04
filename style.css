@@ -44,3 +44,11 @@ input::placeholder {
     font-size: 18px;
     padding: 15px;
 }
+
+.valid {
+    border: 2px solid green;
+}
+
+.invalid {
+    border: 2px solid green;
+}
