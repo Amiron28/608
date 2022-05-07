@@ -1,56 +1,87 @@
-let form = document.forms.register
-let inputs = form.querySelectorAll('input')
+let body = document.body
+// let input = document.createElement('input') // создание
 
-let patterns = {
-    Name: /^[a-z ,.'-]+$/i,
-    Surname: /^[a-z ,.'-]+$/i,
-    Email: /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
-    Password: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*#?&]{8,}$/
+
+// input.classList.add('inp') // стилизация или присваивание каких лиюо атрибутов или текстов
+
+// body.append(input) // вставка
+// body.prepend(input) // вставка
+// body.after(input) // вставка
+// body.before(input) // вставка
+
+
+// let div = document.createElement('div')
+// let img = document.createElement('img')
+
+
+// div.style.border = "2px solid #c4c4c4"
+// div.style.width = "300px"
+// div.style.height = "600px"
+// div.style.padding = "20px"
+// div.style.margin = "50px auto"
+
+// img.src = "./photo_2021-09-16_00-15-36.jpg"
+// img.style.width = "100%"
+
+// div.append(img)
+// body.prepend(div)
+
+let arr = [
+    "Все курсы",
+    "Успейте записаться",
+    "Преподаватели",
+    "Фотографии",
+    "Бесплатный урок",
+    "Контакты",
+    "UZ"
+]
+
+let header = document.createElement('header')
+let left = document.createElement('div')
+let right = document.createElement('div')
+let img = document.createElement('img')
+
+let button = document.createElement('button')
+let brg = document.createElement('button')
+
+left.classList.add('left')
+right.classList.add('right')
+
+img.src = "./logo.svg"
+img.alt = "logo"
+
+button.classList.add('blue-btn')
+button.innerHTML = "button"
+brg.innerHTML = "burger"
+
+for (let item of arr) {
+    let span = document.createElement('span')
+    span.innerHTML = item
+
+    left.append(span)
 }
 
-function validate(filed, regex) {
-    if (regex.test(filed.value)) {
-        filed.classList.add('valid')
-        filed.classList.remove('invalid')
-    } else {
-        filed.classList.add('invalid')
-        filed.classList.remove('valid')
-    }
-}
+right.append(button, brg)
+left.prepend(img)
+header.append(left, right)
+body.prepend(header)
 
-inputs.forEach(inp => {
-    inp.onkeyup = () => {
-        validate(inp, patterns[inp.name])
-    }
-})
 
-form.onsubmit = (event) => {
-    event.preventDefault()
+btn.onclick = () => {
 
-    let arr = []
-
-    inputs.forEach(inp => {
-        if (inp.classList.value === 'invalid' || inp.value.length === 0) {
-            arr.push(1)
-        }
-    })
-
-    if (arr.length === 0) {
-        submit()
-    } else {
-        alert('error')
-    }
 }
 
 
-function submit() {
-    let user = {}
+// btn.addEventListener('click', () => {
 
-    let fm = new FormData(form)
+// })
 
-    fm.forEach((value, key) => {
-        user[key] = value
-    })
-
-    console.log(user);
-}
+let arr2 = [
+    {
+        id: Math.random(),
+        course: 'SMM',
+        days: "PN FR",
+        time: 2222,
+        procent: 20
+    },
+]
