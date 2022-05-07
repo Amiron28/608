@@ -26,62 +26,62 @@ let body = document.body
 // div.append(img)
 // body.prepend(div)
 
-let arr = [
-    "Все курсы",
-    "Успейте записаться",
-    "Преподаватели",
-    "Фотографии",
-    "Бесплатный урок",
-    "Контакты",
-    "UZ"
-]
+// let arr = [
+//     "Все курсы",
+//     "Успейте записаться",
+//     "Преподаватели",
+//     "Фотографии",
+//     "Бесплатный урок",
+//     "Контакты",
+//     "UZ"
+// ]
 
-let header = document.createElement('header')
-let left = document.createElement('div')
-let right = document.createElement('div')
-let img = document.createElement('img')
+// let header = document.createElement('header')
+// let left = document.createElement('div')
+// let right = document.createElement('div')
+// let img = document.createElement('img')
 
-let button = document.createElement('button')
-let brg = document.createElement('button')
+// let button = document.createElement('button')
+// let brg = document.createElement('button')
 
-left.classList.add('left')
-right.classList.add('right')
+// left.classList.add('left')
+// right.classList.add('right')
 
-img.src = "./logo.svg"
-img.alt = "logo"
+// img.src = "./logo.svg"
+// img.alt = "logo"
 
-button.classList.add('blue-btn')
-button.innerHTML = "button"
-brg.innerHTML = "burger"
+// button.classList.add('blue-btn')
+// button.innerHTML = "button"
+// brg.innerHTML = "burger"
 
-for (let item of arr) {
-    let span = document.createElement('span')
-    span.innerHTML = item
+// for (let item of arr) {
+//     let span = document.createElement('span')
+//     span.innerHTML = item
 
-    left.append(span)
-}
+//     left.append(span)
+// }
 
-right.append(button, brg)
-left.prepend(img)
-header.append(left, right)
-body.prepend(header)
+// right.append(button, brg)
+// left.prepend(img)
+// header.append(left, right)
+// body.prepend(header)
 
 
-btn.onclick = () => {
+// btn.onclick = () => {
 
-}
+// }
 
 
 // btn.addEventListener('click', () => {
 
 // })
 
-let arr2 = [
-    {
-        id: Math.random(),
-        course: 'SMM',
-        days: "PN FR",
-        time: 2222,
-        procent: 20
-    },
-]
+// let arr2 = [
+//     {
+//         id: Math.random(),
+//         course: 'SMM',
+//         days: "PN FR",
+//         time: 2222,
+//         procent: 20
+//     },
+// ]
