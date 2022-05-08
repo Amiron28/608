@@ -74,14 +74,26 @@ let body = document.body
 
 // btn.addEventListener('click', () => {
 
+
 // })
 
-// let arr2 = [
-//     {
-//         id: Math.random(),
-//         course: 'SMM',
-//         days: "PN FR",
-//         time: 2222,
-//         procent: 20
-//     },
-// ]
+let arr = [
+    {
+        id: Math.random(),
+        course: 'FRONTEND',
+        days: "Вторник-Четверг-Суббота",
+        time: 13.30 - 15.00,
+        procent: 100
+    },
+    {
+        id: Math.random(),
+        course: 'Экстримальный Арабский язык',
+        days: "Вторник-Четверг-Суббота",
+        time: 13.30 - 15.00,
+        procent: 1
+    },
+]
+
+for (let item of arr) {
+    console.log(item);
+}
