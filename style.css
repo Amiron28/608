@@ -95,6 +95,17 @@
 .container {
     width: 85%;
     height: 800px;
-    background-color: black;
+    background-color: transparent;
     margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.items {
+    width: 200px;
+    height: 300px;
+    background-color: #c4c4c4;
+    border-radius: 14px;
+    padding: 20px;
 }

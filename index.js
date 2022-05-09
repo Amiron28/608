@@ -196,6 +196,103 @@ let body = document.body
 //     main.append(btn)
 // }
 
+
+
+let arr = [
+    {
+        id: Math.random(),
+        course: 'Frontend dasturlash',
+        days: "Вторник-Четверг-Суббота",
+        time: 15.00 - 16.30,
+        procent: 20
+    },
+    {
+        id: Math.random(),
+        course: 'Экстримальный Арабский язык',
+        days: "Вторник-Четверг-Суббота",
+        time: 13.30 - 15.00,
+        procent: 1
+    },
+    {
+        id: Math.random(),
+        course: 'SMM',
+        days: "Вторник-Четверг-Суббота",
+        time: 9.00 - 10.30,
+        procent: 100
+    },
+    {
+        id: Math.random(),
+        course: 'SMM',
+        days:
+            "Вторник-Четверг-Суббота",
+        time: 18.00 - 19.30,
+        procent: 100
+    },
+    {
+        id: Math.random(),
+        course: 'Английский язык',
+        days:
+            "Понедельник -пятница",
+        time: 17.00 - 18.30,
+        procent: 40
+    },
+    {
+        id: Math.random(),
+        course: 'Ментальная арифметика',
+        days:
+            "Вторник-Суббота",
+        time: 13.00 - 16.30,
+        procent: 100
+    },
+    {
+        id: Math.random(),
+        course: 'Графический дизайн',
+        days: "Вторник - четверг - суббота",
+        time: 16.30 - 18.00,
+        procent: 20
+    },
+    {
+        id: Math.random(),
+        course: 'Grafik Dizayn',
+        days: "Понедельник - среда - пятница",
+        time: 13.30 - 15.00,
+        procent: 20
+    },
+    {
+        id: Math.random(),
+        course: 'Путь в Digital',
+        days: "Понедельник - среда - пятница",
+        time: 16.30 - 18.00,
+        procent: 50
+    },
+    {
+        id: Math.random(),
+        course: '3D-modellashtirish',
+        days: "Понедельник - среда - пятница",
+        time: 10.30 - 12.00,
+        procent: 50
+    },
+    {
+        id: Math.random(),
+        course: 'SMM',
+        days: "Вторник-четверг-суббота",
+        time: 18.00 - 19.30,
+        procent: 0
+    },
+]
+
+
+
 let container = document.createElement('div')
 container.classList.add('container')
 body.prepend(container)
+
+for (let i = 0; i <= 10; i++) {
+    let block = document.createElement('div')
+    block.classList.add('items')
+    container.append(block)
+
+    for (let item of arr) { 
+        
+    }
+}
