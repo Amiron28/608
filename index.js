@@ -289,14 +289,15 @@ for (let i = 0; i <= 11; i++) {
     let block = document.createElement('div')
     block.classList.add('items')
     container.append(block)
-
+    
     let heading = document.createElement('span')
     let polzunok = document.createElement('div')
     let fill = document.createElement('div')
     let days = document.createElement('span')
     let time = document.createElement('span')
     let btn = document.createElement('button')
-
+    
+    
     for (let item of arr) {
         heading.innerHTML = item.course
         heading.classList.add('heading')
@@ -306,7 +307,7 @@ for (let i = 0; i <= 11; i++) {
         fill.classList.add('fill')
         block.append(polzunok)
         polzunok.append(fill)
-
+        
         days.classList.add('days')
         block.append(days)
         days.innerHTML = item.days
