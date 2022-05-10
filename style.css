@@ -154,6 +154,14 @@
     border: 2px solid blue;
     background-color: transparent;
     border-radius: 14px;
-    margin-top: 90px;
+    margin-top: 50px;
     font-size: 12px;
+}
+
+.id {
+    font-size: 14px;
+    font-weight: 300;
+    color: lime;
+    display: block;
+    margin-bottom: 20px;
 }
