@@ -34,6 +34,7 @@ form.onsubmit = (event) => {
     todos.push(task);
     reload(todos)
 }
+
 let container = document.querySelector('.container')
 
 let reload = (arr) => {
@@ -43,14 +44,33 @@ let reload = (arr) => {
         let div = document.createElement('div')
         let b = document.createElement('b')
         let span = document.createElement('span')
+        let btn = document.createElement('button')
 
-        div.classList.add('item')
+        // div.classList.add('item')
+        div.style.height = "120px"
+        div.style.background = "#F0F0F0"
+        div.style.border = "2px solid  #007FFF"
+        div.style.padding = "10px"
+        b.classList.add('b')
+        span.classList.add('span')
+        btn.classList.add('btn-done')
+
         b.innerHTML = item.task
         span.innerHTML = item.time
+        btn.innerHTML = "Done"
 
 
-        div.append(b, span)
+        div.append(b, span, btn)
         container.append(div)
+
+
+        btn.onclick = () => {
+
+            div.classList.add('done')
+        }
+
+
+
     }
 }
 

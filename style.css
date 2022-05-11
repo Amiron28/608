@@ -14,6 +14,7 @@ h1 {
     font-size: 50px;
     font-weight: 600;
 }
+
 h1 {
     text-align: center;
     margin-top: 20px;
@@ -35,6 +36,7 @@ h1 {
     border: 2px solid blue;
     border-radius: 15px;
     padding: 20px;
+    font-size: 18px;
 }
 
 
@@ -63,17 +65,45 @@ h1 {
 }
 
 .container {
-    display: grid;    
-    grid-template-columns: repeat(3,1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 80%;
     gap: 20px;
     margin: 0 auto;
 }
 
-.item {
-    height: 90px;
+/* .item {
+    height: 120px;
     background-color: #F0F0F0;
     border-radius: 14px;
     border: 1px solid #007FFF;
     padding: 10px;
+} */
+
+.b, .span {
+    display: block;
+}
+
+.span {
+    margin-top: 10px;
+}
+
+.btn-done {
+    width: 70px;
+    height: 30px;
+    display: block;
+    background-color: royalblue;
+    border-radius: 14px;
+    color: white;
+    margin-top: 15px;
+    margin-left: 250px;
+
+}
+
+.active {
+    display: none;
+}
+
+.done {
+    display: none;
 }
