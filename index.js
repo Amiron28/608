@@ -1,19 +1,5 @@
-let todos = [
-    {
-        "id": 1,
-        "task": "купить дом на марсе",
-        "status": true,
-        "time": "10:10"
-    },
-    {
-        "id": 2,
-        "task": "купить дом на марсе",
-        "status": true,
-        "time": "10:10"
-    }
-]
-
 let form = document.forms.addTask
+let todos = []
 
 form.onsubmit = (event) => {
     event.preventDefault()
@@ -34,7 +20,6 @@ form.onsubmit = (event) => {
     todos.push(task);
     reload(todos)
 }
-
 let container = document.querySelector('.container')
 
 let reload = (arr) => {
@@ -44,34 +29,41 @@ let reload = (arr) => {
         let div = document.createElement('div')
         let b = document.createElement('b')
         let span = document.createElement('span')
-        let btn = document.createElement('button')
+        let del = document.createElement('button')
+        let editeItem = document.createElement('button')
 
-        // div.classList.add('item')
-        div.style.height = "120px"
-        div.style.background = "#F0F0F0"
-        div.style.border = "2px solid  #007FFF"
-        div.style.padding = "10px"
-        b.classList.add('b')
-        span.classList.add('span')
-        btn.classList.add('btn-done')
 
+        div.classList.add('newTask')
         b.innerHTML = item.task
         span.innerHTML = item.time
-        btn.innerHTML = "Done"
+        del.innerHTML = "delete"
+        editeItem.innerHTML = "edite"
 
 
-        div.append(b, span, btn)
+        div.append(b, span, del, editeItem)
         container.append(div)
 
 
-        btn.onclick = () => {
-
-            div.classList.add('done')
+        del.onclick = () => {
+            arr.splice(arr.indexOf(item), 1)
+            reload(todos)
         }
 
+        editeItem.onclick = () => {
+            console.log('edite');
+            arr.splice(arr.indexOf(item), 1, {
+                id: Math.random(),
+                status: false,
+                task: "edited",
+                time: `${new Date().getHours()}:${new Date().getMinutes()}`
+            })
+            reload(todos)
+        }
 
 
     }
 }
+
+
 
 reload(todos)
